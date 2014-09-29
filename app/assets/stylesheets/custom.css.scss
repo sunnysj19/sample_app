@@ -12,7 +12,7 @@ html {
 }
 
 body {
- background-image: asset-data-url("bg.jpg") no-repeat center center fixed; 
+ background-image: asset-url("bg.jpg",image) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
