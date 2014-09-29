@@ -1,0 +1,14 @@
+%header.navbar.navbar-fixed-top.navbar-inverse
+  .navba-inner
+    #header_left.container
+      #linky{:style => "margin-left:20%;"}= link_to "PalsPage", '#', id: "logo"
+    #eg{:style => "position:absolute;"}
+      %ul.nav.pull-right{:style => "margin-top:-35px;"}
+        %li= link_to "Home",    'root_path'
+        %li= link_to "Help",    'help_path'
+        %li= link_to "About",   '#'
+        %li= link_to "Sign in", '#'
+        %li &nbsp;&nbsp;&nbsp;
+    #header_right.container
+      #linky2{:style => "margin-left:20%; margin-top:10%;"}
+      #name{:style => "margin-left:20%; color:white; cursor:pointer;"} Sunny N Sharma
