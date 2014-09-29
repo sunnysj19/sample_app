@@ -2,19 +2,17 @@ require 'spec_helper'
 
 describe "Static pages" do
 
-  describe "Home page" do
-
-    it "should have the content 'Sample App'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Sample App')
-      expect(page).to have_title('home')
+describe "Home page" do
+it "should not have a custom page title" do
+      visit root_path
+      expect(page).not_to have_title('| Home')
     end
-  end
+end
 
 describe "Help page" do
 
     it "should have the content 'Help'" do
-      visit '/static_pages/help'
+      visit help_path
       expect(page).to have_content('Help')
       expect(page).to have_title('help')
     end
@@ -23,7 +21,7 @@ describe "Help page" do
 describe "About page" do
 
     it "should have the content 'About'" do
-      visit '/static_pages/about'
+      visit about_path
       expect(page).to have_content('About')
       expect(page).to have_title('about')
     end
