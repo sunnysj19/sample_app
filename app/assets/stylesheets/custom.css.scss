@@ -12,7 +12,8 @@ html {
 }
 
 body {
- background-image: url(image-path('bg.jpg')) no-repeat center center fixed; 
+ background-image: url(image-path('bg.jpg')); 
+background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
